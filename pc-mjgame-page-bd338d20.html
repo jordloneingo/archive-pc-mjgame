@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻将胡了 – 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f2eb;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2e2b28;
+            line-height: 1.75;
+            padding: 2rem 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 2px solid #dcd3ca;
+            padding-bottom: 1.8rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #3f3630;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #7b7068;
+            font-style: italic;
+        }
+
+        .summary {
+            background: #fffaf5;
+            padding: 1.8rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            margin-bottom: 2.8rem;
+        }
+
+        .summary p {
+            font-size: 1.1rem;
+            text-indent: 2em;
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight-box {
+            background: #ece3da;
+            padding: 1.5rem 2rem;
+            border-left: 6px solid #b5a496;
+            margin: 2.2rem 0 2.8rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .highlight-box h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #3d322b;
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0.2rem;
+        }
+
+        .highlight-box li {
+            padding: 0.4rem 0;
+            position: relative;
+            padding-left: 1.6rem;
+        }
+
+        .highlight-box li::before {
+            content: "·";
+            position: absolute;
+            left: 0.2rem;
+            color: #8b7a6e;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .scene {
+            margin: 2.5rem 0 2.5rem 0;
+        }
+
+        .scene h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            border-bottom: 1px dashed #cec1b6;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            color: #463e37;
+        }
+
+        .scene p {
+            margin-bottom: 1rem;
+            text-indent: 2em;
+        }
+
+        .tip-card {
+            background: #f0e8e1;
+            padding: 1.6rem 2rem;
+            border-radius: 16px;
+            margin: 2.5rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .tip-card .label {
+            font-weight: 600;
+            color: #6f5e52;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 0.7rem;
+        }
+
+        .tip-card p {
+            font-size: 0.98rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-summary {
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd3c9;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: #4d4038;
+        }
+
+        .faq-item .a {
+            padding-left: 1.2rem;
+            color: #5e534b;
+            font-size: 0.98rem;
+        }
+
+        .footnote {
+            margin: 3rem 0 1rem 0;
+            font-size: 0.85rem;
+            color: #8f827a;
+            border-top: 1px solid #d9cfc6;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        a {
+            color: #735d4c;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a699;
+            transition: border 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #6a5544;
+        }
+
+        @media (max-width: 620px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .summary,
+            .highlight-box,
+            .tip-card {
+                padding: 1.3rem 1.2rem;
+            }
+            .highlight-box {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>麻将胡了</h1>
+        <div class="sub">一份关于网站用途与体验的简要说明</div>
+    </div>
+
+    <div class="summary">
+        <p>打开一个网站，最先想要知道的往往是：这里提供什么、是否值得花时间。这个页面就是为了回答这些直接的问题。以「麻将胡了」作为核心，整个网站围绕麻将游戏的在线娱乐场景展开，适合想要快速了解游戏节奏与基本玩法的用户。</p>
+        <p>不渲染夸张氛围，也不堆砌功能列表——只把最核心的站点定位摊开来讲清楚。如果你恰好对麻将题材感兴趣，并且想找一个可以随时进入的线上环境，这里或许就是你在找的地方。</p>
+    </div>
+
+    <div class="highlight-box">
+        <h2>几个值得注意的亮点</h2>
+        <ul>
+            <li>以经典麻将规则为基础，强调“胡牌”瞬间的反馈与节奏感。</li>
+            <li>界面整洁，没有过多干扰元素，可以专注于牌局本身。</li>
+            <li>无需复杂注册流程，降低了尝试门槛。</li>
+            <li>支持在主流浏览器中直接运行，适配常见的屏幕尺寸。</li>
+            <li>整体风格偏向传统桌游的轻松氛围，不刻意制造紧张感。</li>
+        </ul>
+    </div>
+
+    <div class="scene">
+        <h2>可能适合的场景</h2>
+        <p>下班后想短暂放空，又不想打开太沉重的游戏；或者朋友聚会前先熟悉一下胡牌的组合方式——这类轻量的需求恰好和网站的气质合拍。它不追求竞技排名或高强度对战，而是提供一种近似于“随时坐下玩两局”的体验。</p>
+        <p>如果你只是想体验一下麻将的基础流程，或者单纯想找一处可以安静摸索牌型的页面，可以试试看 <a href="https://pc-mjgame.com">麻将胡了</a> 是否契合你的习惯。每个人的节奏不同，但至少它给了你一个低负担的起点。</p>
+    </div>
+
+    <div class="tip-card">
+        <div class="label">使用建议 · 克制提示</div>
+        <p>任何线上娱乐都建议适度。本页面所介绍的网站并不承诺“必胜”“速成”或任何与金钱收益相关的结果，它只是一个提供麻将模拟体验的站点。请根据个人情况合理安排时间，保持健康的上网习惯。</p>
+        <p>如果你在寻找一个界面干净、规则相对标准的麻将环境，并且已经了解基本的胡牌逻辑，那么访问 <a href="https://pc-mjgame.com">麻将胡了</a> 可能不需要太多心理负担。先看，再试，自己判断。</p>
+    </div>
+
+    <div class="faq-summary">
+        <div class="faq-item">
+            <div class="q">— 这个网站需要下载安装吗？</div>
+            <div class="a">不需要。直接在浏览器中打开即可使用，没有客户端或插件要求。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">— 有新手引导或教程吗？</div>
+            <div class="a">页面主要依赖玩家已有的麻将基础。如果你是完全新手，建议先了解最基础的胡牌牌型，再开始尝试。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">— 是否包含内购或付费功能？</div>
+            <div class="a">据目前公开的信息，该站点主要以免费体验为主，没有强制付费环节。但具体规则以实际页面为准。</div>
+        </div>
+    </div>
+
+    <div class="footnote">
+        <span>仅作产品说明用途 · 内容基于公开信息整理</span>
+    </div>
+
+</body>
+</html>
